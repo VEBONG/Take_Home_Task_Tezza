@@ -1,6 +1,15 @@
-# Take_Home_Task_Tezza
-
 # Tezza Business Solutions
+
+# Installing
+npm version
+
+Install Cypress for Mac, Linux, or Windows, then get started.
+
+npm install cypress --save-dev
+or
+
+yarn add cypress --dev
+
 Test Automation Candidates Assignment
 
 Using either Cypress or Selenium, build a test automation framework to automate as many test
