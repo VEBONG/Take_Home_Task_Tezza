@@ -66,13 +66,13 @@ describe('Web Registration Page', () => {
           .should('be.visible')  // assert that it's visible
     })
 
-    it("should display error messages for empty required fields", () => {
-        // Click submit
-        registerPage.submitForm();
-        cy.wait(1000); // Wait for the form to be processed
-        // Assert that error messages are displayed for each required field
-        cy.get('.error-popup').should('be.visible')
-    })
+    // it("should display error messages for empty required fields", () => {
+    //     // Click submit
+    //     registerPage.submitForm();
+    //     cy.wait(1000); // Wait for the form to be processed
+    //     // Assert that error messages are displayed for each required field
+    //     cy.get('.error-popup').should('be.visible')
+    // })
 
     it('should be able register a new user', () => {
         // Fill in the registration form

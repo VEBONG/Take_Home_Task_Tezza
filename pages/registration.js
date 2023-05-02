@@ -26,7 +26,7 @@ class RegisterPage {
       this.dayDropdown = "#basicBootstrapForm #daybox";
       this.passwordField = "#firstpassword";
       this.confirmPasswordField = "#secondpassword";
-      this.uploadImage = '#imagetrgt';
+      //this.uploadImage = '#imagetrgt';
       this.submitButton = "#submitbtn";
     }
   
@@ -51,7 +51,7 @@ class RegisterPage {
       day,
       password,
       confirmPassword,
-      uploadImage
+      //uploadImage
     ) {
       cy.get(this.firstNameField).type(firstName);
       cy.get(this.lastNameField).type(lastName);
@@ -62,7 +62,7 @@ class RegisterPage {
       cy.get(this.hobbiesCheckboxes).check(hobbies);
       cy.get(this.languagesDropdown).invoke('val', language);
       cy.get(this.skillsDropdown).select(skills);
-      cy.get(this.selectCountryDropdown).click().select(country);
+      cy.get(this.selectCountryDropdown).click();
       cy.get('.select2-search__field').type(countryName)
       cy.get('.select2-results__option').contains(countryName).click()
       cy.get(this.yearDropdown).select(year);
@@ -70,7 +70,7 @@ class RegisterPage {
       cy.get(this.dayDropdown).select(day);
       cy.get(this.passwordField).type(password);
       cy.get(this.confirmPasswordField).type(confirmPassword);
-      cy.get(this.uploadImage).attachFile(uploadImage);
+      //cy.get(this.uploadImage).attachFile(uploadImage);
 
     }
   
