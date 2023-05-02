@@ -21,10 +21,11 @@ Copy
 git clone https://github.com/your-username/cypress-project.git
 ```
 2. Navigate to the project directory:
-bash
+```bash
 Copy code
 cd cypress-project
 3. Install the dependencies:
+```
 
 ```Copy code
 npm install
@@ -33,8 +34,7 @@ npm install
 
 To run the tests, use the following command:
 
-```
-Copy code
+```Copy code
 npm run test
 This will launch the Cypress test runner and run all of the tests in the cypress/integration directory.
 ```
@@ -46,8 +46,7 @@ The project includes a cypress.json configuration file where you can configure v
 
 The project has the following folder structure:
 
-```
-Copy code
+```Copy code
 cypress/
     fixtures/
         example.json
