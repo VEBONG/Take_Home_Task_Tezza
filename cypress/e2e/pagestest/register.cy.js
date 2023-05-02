@@ -96,6 +96,7 @@ describe('Web Registration Page', () => {
         );
 
         registerPage.submitForm()
+        //cy.url().should('include', '/success')
 
     })
 
