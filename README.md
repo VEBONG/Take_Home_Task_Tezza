@@ -18,7 +18,8 @@ To install the project dependencies, follow these steps:
 1. Clone the repository to your local machine using Git:
 ```bash
 Copy code
-git clone https://github.com/your-username/cypress-project.git```
+git clone https://github.com/your-username/cypress-project.git
+```
 2. Navigate to the project directory:
 bash
 Copy code
