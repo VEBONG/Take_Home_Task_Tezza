@@ -25,18 +25,19 @@ bash
 Copy code
 cd cypress-project
 3. Install the dependencies:
-Copy code
-npm install
 
+```Copy code
+npm install
+```
 # Running the tests
 
 To run the tests, use the following command:
 
-arduino
+```
 Copy code
 npm run test
 This will launch the Cypress test runner and run all of the tests in the cypress/integration directory.
-
+```
 # Configuration
 
 The project includes a cypress.json configuration file where you can configure various options for Cypress, such as the base URL for the application under test, the viewport size, and more.
@@ -45,7 +46,7 @@ The project includes a cypress.json configuration file where you can configure v
 
 The project has the following folder structure:
 
-arduino
+```
 Copy code
 cypress/
     fixtures/
@@ -61,11 +62,13 @@ cypress/
     cypress.json
 package.json
 README.md
-fixtures/: Contains test data in JSON format.
-integration/: Contains the test files.
-plugins/: Contains the configuration for Cypress plugins.
-support/: Contains reusable utility functions and Page Object Models (POM) for tests.
-cypress.json: The configuration file for Cypress.
+```
+
+* fixtures/: Contains test data in JSON format.
+* integration/: Contains the test files.
+* plugins/: Contains the configuration for Cypress plugins.
+* support/: Contains reusable utility functions and Page Object Models (POM) for tests.
+* cypress.json: The configuration file for Cypress.
 
 # Contributing
 
