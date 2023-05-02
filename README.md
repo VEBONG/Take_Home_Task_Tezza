@@ -1,22 +1,75 @@
 # Tezza Business Solutions
 
-# Installing
-npm version
+# Cypress Automated Testing Project
 
-Install Cypress for Mac, Linux, or Windows, then get started.
+This project is a test automation framework developed using Cypress for testing the web registration form found at https://demo.automationtesting.in/Register.html. The framework uses Page Object Model (POM) to improve code maintainability and scalability.
 
-npm install cypress --save-dev
-or
+# Prerequisites
 
-yarn add cypress --dev
+Before running the tests, you need to have the following software installed on your machine:
 
-Test Automation Candidates Assignment
+* Node.js (minimum version 12.x)
+* Git
 
-Using either Cypress or Selenium, build a test automation framework to automate as many test
-scenarios as you can identify from the web registration form found at the URL below:
-http://demo.automationtesting.in/Register.html
-Perform appropriate assertions and once done, create a repository on a remote version control
-server of your choice and push your framework there, then share the link with us.
-N/B: Endeavor to set accessibility to public so that we can access it.
+# Installation
 
-Code Implementation with Cypress.
+To install the project dependencies, follow these steps:
+
+1. Clone the repository to your local machine using Git:
+bash
+Copy code
+git clone https://github.com/your-username/cypress-project.git
+2. Navigate to the project directory:
+bash
+Copy code
+cd cypress-project
+3. Install the dependencies:
+Copy code
+npm install
+
+# Running the tests
+
+To run the tests, use the following command:
+
+arduino
+Copy code
+npm run test
+This will launch the Cypress test runner and run all of the tests in the cypress/integration directory.
+
+# Configuration
+
+The project includes a cypress.json configuration file where you can configure various options for Cypress, such as the base URL for the application under test, the viewport size, and more.
+
+# Folder structure
+
+The project has the following folder structure:
+
+arduino
+Copy code
+cypress/
+    fixtures/
+        example.json
+    integration/
+        register.spec.js
+    plugins/
+        index.js
+    support/
+        pages/
+            registerPage.js
+        index.js
+    cypress.json
+package.json
+README.md
+fixtures/: Contains test data in JSON format.
+integration/: Contains the test files.
+plugins/: Contains the configuration for Cypress plugins.
+support/: Contains reusable utility functions and Page Object Models (POM) for tests.
+cypress.json: The configuration file for Cypress.
+
+# Contributing
+
+If you want to contribute to this project, feel free to create a pull request or open an issue.
+
+# License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
