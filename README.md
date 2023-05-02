@@ -55,7 +55,7 @@ cypress/
     plugins/
         index.js
     support/
-        pages/
+        pageObjects/
             registerPage.js
         index.js
     cypress.json

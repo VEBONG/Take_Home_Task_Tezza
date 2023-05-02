@@ -1,4 +1,4 @@
-import RegisterPage from "../../../pages/registration";
+import RegisterPage from "../../../pageObjects/registration";
 
 describe('Web Registration Page', () => {
     const registerPage = new RegisterPage()
