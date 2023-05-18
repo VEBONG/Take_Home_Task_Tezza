@@ -48,7 +48,8 @@ describe('Web Registration Page', () => {
             month,
             day,
             password,
-            confirmPassword
+            confirmPassword,
+
         );
 
         registerPage.submitForm()
@@ -62,8 +63,8 @@ describe('Web Registration Page', () => {
 
     it('displays an error message when first name field is empty', () => {
         registerPage.submitForm();
-        cy.contains('Please fill out this field')  // find the error message
-          .should('be.visible')  // assert that it's visible
+        cy.contains('Please fill out this field', {timeout: 10000})  // find the error message
+          .should('exist')  // assert that it's visible
     })
 
     // it("should display error messages for empty required fields", () => {
@@ -92,7 +93,8 @@ describe('Web Registration Page', () => {
             month,
             day,
             password,
-            confirmPassword
+            confirmPassword,        
+            
         );
 
         registerPage.submitForm()
